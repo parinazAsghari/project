@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/Padding"
+    android:background="@color/recyclerBackground"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="@dimen/ProductRecyclerImageLayout"
+        android:layout_height="@dimen/ProductRecyclerImageLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ProductRecyclerHorizontalImageMargin"
+            android:layout_marginLeft="@dimen/ProductRecyclerHorizontalImageMargin"
+            android:src="@drawable/splash"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/product_image" />
+
+       <ImageView
+            style="@style/ProductRecyclerStoreIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/product_store_icon"
+            android:src="@drawable/splash" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reduced_price_tv"
+        android:layout_margin="@dimen/listItemsMargin"
+        android:text="15000 تومان"
+        android:textSize="@dimen/largeTextSize"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/listItemsMargin"
+            android:id="@+id/price_tv"
+            android:text="16500"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/smallTextSize"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discount_tv"
+            android:layout_margin="@dimen/listItemsMargin"
+            style="@style/TextViewsBg"
+            android:background="@drawable/shape_discount"
+            android:text="50% تخفیف"
+            android:gravity="center"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/light_text"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:id="@+id/product_name_tv"
+        android:text="شیر کم چرب پگاه"
+        android:layout_marginStart="@dimen/listItemsMargin"
+        android:textSize="@dimen/mediumTextSize"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_stock" />
+
+</LinearLayout>

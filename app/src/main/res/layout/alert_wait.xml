@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@drawable/shape_alert_dialog"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/ic_alarm_clock"
+
+        android:layout_marginTop="40dp"
+
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="  لطفا منتظر مانده و سپس کلیک کنید."
+        android:lines="5"
+
+        android:layout_margin="20dp"
+
+        android:layout_gravity="center"
+      />
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ProductListActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:layoutDirection="rtl"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:id="@+id/sort_icon"
+                android:layout_toStartOf="@+id/filter_icon"
+
+                android:layout_marginEnd="@dimen/toolbarMargin"
+                android:background="@drawable/ic_sort"
+                android:layout_centerVertical="true"/>
+            <Button
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:id="@+id/filter_icon"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_filter"
+                android:layout_marginEnd="@dimen/toolbarMargin"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="فروشگاه رفاه"
+                android:textColor="@color/toolbar_items_color"
+                android:textSize="@dimen/titleTextSize"
+                android:layout_marginStart="@dimen/toolbarMargin"
+                android:layout_toEndOf="@id/back_icon"
+                android:id="@+id/products_list_toolbar_tv" />
+            <Button
+                style="@style/Icon"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_icon"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/connection_error_layout"/>
+    <include layout="@layout/data_loading_layout"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/products_recycler_refresh">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_recycler"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

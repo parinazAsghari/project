@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/libs/volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/transforms/dex/debug/folders/1000/2/volley_cf6456b9040af4b9a12fcfffc94f2bcc04b91624/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1693b2912be1a9de250b13b390fbfd88fab9e4b9">
+        <dex dex="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bf70421c6c3c2ba70e4f2d2763a25db95677720c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/libs/picasso.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fb8144776ae3c72c62d66b7f0bdb2580b6f0668c">
+        <dex dex="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/transforms/dex/debug/folders/1000/2/picasso_a20128f2ab861679fa8869e70267dd7c817d638d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/parinaz/AndroidStudioProjects/ChainStoresApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a2d49669284456fabfe10e06ac60cca2fdec6ef5/classes.dex" />
+    </item>
+
+</items>

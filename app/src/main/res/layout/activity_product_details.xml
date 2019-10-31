@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ProductDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/details_toolbar"
+        android:layoutDirection="rtl">
+        <Button
+            style="@style/Icon"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_icon"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_back" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/connection_error_layout"/>
+    <include layout="@layout/data_loading_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/productDetailsImageHeight"
+                android:src="@drawable/splash"
+                android:padding="@dimen/Padding"
+                android:background="@color/recyclerBackground"
+                android:id="@+id/product_details_image"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/Margin"
+                android:background="@color/recyclerBackground"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/Padding"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="@dimen/ToggleButtonWidth"
+                        android:layout_height="@dimen/ToggleButtonHeight"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@drawable/ic_mark_off"
+                        android:layout_marginLeft="@dimen/Margin"
+                        android:checked="false"
+                        android:textOff=" "
+                        android:textOn=" "
+                        android:id="@+id/marked_btn"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_details_name"
+                        android:textSize="@dimen/titleTextSize"
+                        android:layout_weight="1"
+                        android:text="شیر کم چرب پگاه 1.5 لیتری"
+                        android:layout_gravity="right|center_vertical"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:layout_marginBottom="@dimen/Margin"
+                    android:layout_gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_details_price"
+                        android:text="7000 تومان"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_marginRight="@dimen/Margin"
+                        android:textColor="@color/gray"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_details_reduced_price"
+                        android:text="6500 تومان"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/titleTextSize"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewsBg"
+                    android:textColor="@color/light_text"
+                    android:id="@+id/product_details_discount"
+                    android:background="@drawable/shape_discount"
+                    android:text="15% تخفیف"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:layout_marginBottom="@dimen/Margin"
+                    android:layout_gravity="end"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewsBg"
+                    android:textColor="@color/text_color"
+                    android:id="@+id/product_details_stock"
+                    android:visibility="gone"
+                    android:background="@drawable/stock_shape"
+                    android:text="نا موجود"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:layout_marginBottom="@dimen/Margin"
+                    android:layout_gravity="end"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:layout_marginBottom="@dimen/Margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="موجود در فروشگاه "
+                        android:textSize="@dimen/titleTextSize"
+                        android:layout_marginRight="@dimen/mediumTextSize"
+                        android:id="@+id/store_name"
+                        android:layout_gravity="center_vertical"/>
+                    <ImageView
+                        style="@style/Icon"
+                        android:src="@drawable/ic_store"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/Margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دسته بندی "
+                        android:textSize="@dimen/titleTextSize"
+                        android:layout_marginEnd="@dimen/Margin"
+                        android:id="@+id/category_name"
+                        android:layout_gravity="center_vertical"/>
+                    <ImageView
+                        style="@style/Icon"
+                        android:layout_marginStart="@dimen/listItemsMargin"
+                        android:src="@drawable/ic_list_selected"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Padding">8dp</dimen>
+    <dimen name="listItemsMargin">5dp</dimen>
+    <dimen name="Margin">6dp</dimen>
+    <dimen name="recyclerMarginTop">6dp</dimen>
+    <dimen name="productDetailsImageHeight">150dp</dimen>
+    <dimen name="categoryListImageHeight">120dp</dimen>
+    <dimen name="dialogMargin">25dp</dimen>
+    <dimen name="splashImageSize">200dp</dimen>
+    <dimen name="dialogButton">60dp</dimen>
+    <dimen name="corner">10dp</dimen>
+    <dimen name="textBgCorner">4dp</dimen>
+    <dimen name="textBgPaddingRight">4dp</dimen>
+    <dimen name="textBgPaddingTop">2dp</dimen>
+    <dimen name="searchEtCorner">20dp</dimen>
+    <dimen name="retryButtonPadding">30dp</dimen>
+    <dimen name="iconSize">25dp</dimen>
+    <dimen name="toolbar_back_icon_size">20dp</dimen>
+    <dimen name="toolbar_icon_size">18dp</dimen>
+    <dimen name="dialogIconSize">50dp</dimen>
+    <dimen name="toolbarMargin">10dp</dimen>
+    <dimen name="brandsListImageSize">100dp</dimen>
+    <dimen name="storesListImageSize">120dp</dimen>
+    <dimen name="ProductRecyclerHorizontalImageMargin">20dp</dimen>
+    <dimen name="ProductRecyclerVerticalImageMarginRight">30dp</dimen>
+    <dimen name="ProductRecyclerVerticalImageMarginTop">10dp</dimen>
+    <dimen name="ProductRecyclerImageLayout">120dp</dimen>
+    <dimen name="ProductRecyclerStoreIconSize">50dp</dimen>
+    <dimen name="ToggleButtonWidth">24dp</dimen>
+    <dimen name="ToggleButtonHeight">30dp</dimen>
+
+    <dimen name="menuPadding">10dp</dimen>
+    <dimen name="menuMargin">10dp</dimen>
+
+    <dimen name="titleTextSize">18sp</dimen>
+    <dimen name="largeTextSize">16sp</dimen>
+    <dimen name="mediumTextSize">14sp</dimen>
+    <dimen name="smallTextSize">12sp</dimen>
+    <dimen name="settingDialogMargin">12dp</dimen>
+
+</resources>

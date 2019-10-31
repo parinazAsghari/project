@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/recyclerBackground"
+    android:padding="@dimen/Padding"
+    android:layout_marginTop="@dimen/recyclerMarginTop"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/listItemsMargin"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/titleTextSize"
+            android:lines="2"
+            android:text="شیر کاله کم چرب"
+            android:id="@+id/product_name_tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/largeTextSize"
+            android:layout_above="@+id/view"
+            android:text="17000 تومان"
+            android:id="@+id/reduced_price_tv"/>
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/layout"
+            android:layout_marginTop="@dimen/listItemsMargin"
+            android:background="@color/light_gray"
+            android:layout_marginBottom="@dimen/listItemsMargin"/>
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mediumTextSize"
+                android:text="18500 تومان"
+                android:layout_weight="1"
+                android:gravity="end|top"
+                android:textColor="@color/gray"
+                android:id="@+id/price_tv"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_discount"
+                    android:text="20% تخفیف"
+                    style="@style/TextViewsBg"
+                    android:layout_gravity="end"
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/smallTextSize"
+                    android:id="@+id/discount_tv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نا موجود"
+                    style="@style/TextViewsBg"
+                    android:textSize="@dimen/smallTextSize"
+                    android:layout_gravity="end"
+                    android:background="@drawable/stock_shape"
+                    android:id="@+id/product_stock"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/ProductRecyclerImageLayout"
+        android:layout_height="@dimen/ProductRecyclerImageLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ProductRecyclerVerticalImageMarginTop"
+            android:layout_marginEnd="@dimen/ProductRecyclerVerticalImageMarginRight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/splash"
+            android:id="@+id/product_image"/>
+
+
+        <ImageView
+            style="@style/ProductRecyclerStoreIcon"
+            android:id="@+id/product_store_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/splash" />
+    </RelativeLayout>
+
+</LinearLayout>

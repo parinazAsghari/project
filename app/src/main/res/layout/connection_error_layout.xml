@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/connection_error_layout"
+    android:visibility="gone">
+    <ImageView
+        android:layout_width="@dimen/dialogIconSize"
+        android:layout_height="@dimen/dialogIconSize"
+        android:src="@drawable/ic_wifi"
+        android:id="@+id/icon"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_server"
+        android:layout_below="@+id/icon"
+        android:id="@+id/text"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/gray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/network_try_again"
+        android:layout_below="@id/text"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Margin"
+        android:textColor="@color/light_text"
+        android:paddingRight="@dimen/retryButtonPadding"
+        android:paddingLeft="@dimen/retryButtonPadding"
+        android:background="@drawable/try_button_bg"
+        android:text="@string/try_again" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Chain Stores App</string>
+    <string name="home_btn_text">خانه</string>
+    <string name="category_btn_text">دسته بندی</string>
+    <string name="search_btn_text">جستجو</string>
+    <string name="marked_list_btn_text">نشان شده ها</string>
+    <string name="location_btn_text">موقعیت یاب</string>
+    <string name="home_discounts_tv">بیشترین تخفیف ها</string>
+    <string name="home_stores_tv">فروشگاه ها</string>
+    <string name="home_brands_tv">برند ها</string>
+    <string name="home_more_tv">بیشتر</string>
+    <string name="sorting_tv">مرتب سازی</string>
+    <string name="filtering_tv">فیلتر کردن</string>
+    <string name="default_radio_text">پیش فرض</string>
+    <string name="less_price_radio_text">کم ترین قیمت</string>
+    <string name="most_discount_radio_text">بیشترین تخفیف</string>
+    <string name="price_range">محدوده قیمت :</string>
+    <string name="refah_text">رفاه</string>
+    <string name="canbo_text">جانبو</string>
+    <string name="hyperstar_text">هایپر استار</string>
+    <string name="etka_text">اتکا</string>
+    <string name="stock_text">محصولات ناموجود را نمایش بده.</string>
+    <string name="seekbar_max_price">تا 90000 تومان</string>
+    <string name="splash_text">ChainStore</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="no_connection">خطا در اتصال به اینترنت!</string>
+    <string name="no_server">خطا در دریافت اطلاعات!</string>
+    <string name="check_connection">دستگاه شما به اینترنت متصل نیست. لطفا اتصال به اینترنت را بررسی کنید.</string>
+    <string name="try_again">تلاش مجدد</string>
+    <string name="exit">خروج</string>
+    <string name="loading">در حال دریافت اطلاعات</string>
+    <string name="search_et_hint">نام محصول، فروشگاه، برند...</string>
+    <string name="location_search_et_hint">نام محله یا خیابان مورد نظر را جستجو کنید</string>
+    <string name="location_search_btn">فروشگاه های اطراف من</string>
+    <string name="close_dialog_btn">بستن</string>
+    <string name="setting_location_alert_btn">تنظیمات</string>
+    <string name="location_alert_text">لوکیشن فعال نیست.برای فعال سازی به تنظیمات بروید.</string>
+
+
+
+
+    <string name="branches">برای مشاهده نزدیک ترین شعب فروشگاه ها کلیک کنید</string>
+
+</resources>

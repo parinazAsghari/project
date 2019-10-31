@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parinaz.chainstoresapp.activity.BranchesListActivity">
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/details_toolbar">
+
+        <Button
+            style="@style/Icon"
+            android:id="@+id/back_icon"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فروشگاه های نزدیک به شما:"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            android:layoutDirection="rtl"/>
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/connection_error_layout"/>
+    <include layout="@layout/data_loading_layout"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/products_recycler_refresh">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/branch_recycler"
+        android:layout_marginTop="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+       <!-- <item name="android:fontFamily">@font/b_nazanin</item>-->
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:navigationBarColor">?android:attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="BottomMenuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="AlertDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/move_from_top</item>
+    </style>
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/toolbar_back_icon_size</item>
+        <item name="android:layout_height">@dimen/toolbar_back_icon_size</item>
+    </style>
+    <style name="ProductRecyclerStoreIcon">
+        <item name="android:layout_width">@dimen/ProductRecyclerStoreIconSize</item>
+        <item name="android:layout_height">@dimen/ProductRecyclerStoreIconSize</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/shape_store_icon</item>
+    </style>
+    <style name="TextViewsBg">
+        <item name="android:paddingRight">@dimen/textBgPaddingRight</item>
+        <item name="android:paddingLeft">@dimen/textBgPaddingRight</item>
+        <item name="android:paddingBottom">@dimen/textBgPaddingTop</item>
+        <item name="android:paddingTop">@dimen/textBgPaddingTop</item>
+    </style>
+</resources>

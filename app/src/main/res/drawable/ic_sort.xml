@@ -1,0 +1,4 @@
+<vector android:height="24dp" android:viewportHeight="39"
+    android:viewportWidth="37" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/toolbar_items_color" android:name="Forma 1" android:pathData="m7.4 31.61 2.16 -0.01 -4.77 7.41 -4.81 -7.38 2.19 -0.01 0.05 -31.64 5.23 0.01 -0.06 31.62zm3.04 -31.57v5.23h26.56v-5.23h-26.56zm0 13.43h20.46v-5.22h-20.46v5.22zm0 8.2h12.19v-5.23h-12.19v5.23zm0 8.2h6.75v-5.23h-6.75v5.23z"/>
+</vector>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/menuPadding"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorting_tv"
+        android:textSize="@dimen/titleTextSize"
+        android:id="@+id/txt"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/settingDialogMargin"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/gp"
+        android:layout_marginEnd="@dimen/settingDialogMargin">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/menuMargin"
+            android:layout_marginBottom="@dimen/menuMargin"
+            android:checked="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/smallTextSize"
+            android:text="@string/default_radio_text"
+            android:layoutDirection="rtl"
+            android:id="@+id/default_radio"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/menuMargin"
+            android:layout_marginBottom="@dimen/menuMargin"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/smallTextSize"
+            android:text="@string/less_price_radio_text"
+            android:layoutDirection="rtl"
+            android:id="@+id/less_price_radio"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/menuMargin"
+            android:layout_marginBottom="@dimen/menuMargin"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/smallTextSize"
+            android:text="@string/most_discount_radio_text"
+            android:layoutDirection="rtl"
+            android:id="@+id/most_discount_radio"/>
+
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/gp"
+        android:layout_marginBottom="@dimen/settingDialogMargin"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/colorAccent"
+        android:background="@android:color/transparent"
+        android:id="@+id/close_sort_dialog"
+        android:text="@string/close_dialog_btn"/>
+
+</RelativeLayout>

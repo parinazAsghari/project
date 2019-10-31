@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/shape_alert_dialog"
+    android:layoutDirection="rtl">
+    <ImageView
+        android:layout_width="@dimen/dialogIconSize"
+        android:layout_height="@dimen/dialogIconSize"
+        android:src="@drawable/ic_wifi"
+        android:layout_margin="@dimen/dialogMargin"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_connection"
+        android:textSize="@dimen/titleTextSize"
+        android:lines="3"
+        android:layout_margin="@dimen/dialogMargin"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialogButton"
+            android:layout_weight="1"
+            android:id="@+id/try_again"
+            android:background="@drawable/shape_alert_dialog_try_button"
+            android:layout_margin="0dp"
+            android:textColor="@color/light_text"
+            android:textSize="@dimen/mediumTextSize"
+            android:text="@string/try_again" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialogButton"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:id="@+id/exit"
+            android:textSize="@dimen/mediumTextSize"
+            android:background="@drawable/shape_alert_dialog_exit_button"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+</LinearLayout>

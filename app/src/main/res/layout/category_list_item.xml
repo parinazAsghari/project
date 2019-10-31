@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_margin="@dimen/listItemsMargin"
+        android:background="@drawable/shape_category"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_name"
+            android:text="لبنیات"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/category_image"
+            android:textSize="@dimen/largeTextSize"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/categoryListImageHeight"
+            android:src="@drawable/splash"
+            android:id="@+id/category_image"
+            android:layout_margin="@dimen/Margin"/>
+
+    </RelativeLayout>
