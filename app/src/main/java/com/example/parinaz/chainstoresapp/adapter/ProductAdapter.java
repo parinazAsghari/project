@@ -64,6 +64,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView name , price , reducedPrice , discount , stock;
         ImageView image , storeIcon;
+         public   Button mRemoveButton;
         public ViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.product_name_tv);
@@ -73,6 +74,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             image = itemView.findViewById(R.id.product_image);
             stock = itemView.findViewById(R.id.product_stock);
             storeIcon = itemView.findViewById(R.id.product_store_icon);
+            mRemoveButton = itemView.findViewById(R.id.ib_remove);
         }
         public void bind(Product product) {
             if(product.getDiscount() == 0){
