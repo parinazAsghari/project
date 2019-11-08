@@ -51,8 +51,26 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder,final int position) {
         holder.bind(productList.get(position));
+          try {
+            holder.mRemoveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Product itemLabel = productList.get(position);
+                Product product = productList.get(position);
+                productList.remove(position);
+
+                notifyItemRemoved(position);
+
+                notifyItemRangeChanged(position,productList.size());
+
+               // Toast.makeText(context,"Removed : " + itemLabel,Toast.LENGTH_SHORT).show();
+            }
+        });}
+        catch (NullPointerException e){
+
+        }
     }
 
     @Override
